@@ -22,7 +22,7 @@ pipeline{
     }
     stage ("Build Angular"){
   steps {
-    dir("devopsangular/angular-app"){ 
+    dir("angular-app"){ 
        
         sh "docker build -t angular ."  
     }
