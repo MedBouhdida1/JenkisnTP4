@@ -9,7 +9,7 @@ pipeline{
     }
     stage ("Clone repo"){
       steps {
-        sh "git https://github.com/MedBouhdida1/JenkisnTP4.git"
+        sh "git clone https://github.com/MedBouhdida1/JenkisnTP4.git"
       }
     }
     stage ("Generate backend image"){
