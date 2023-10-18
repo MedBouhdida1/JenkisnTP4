@@ -30,6 +30,5 @@ pipeline{
 }
     stage ("Run docker compose"){
       steps { 
-        dir("devopsangular"){
-        sh "docker compose up -d"
-      }}}}}
+        sh "docker-compose up -d"
+      }}}}
